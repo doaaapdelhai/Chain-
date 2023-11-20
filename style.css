@@ -1,0 +1,375 @@
+:root{
+  --mainColor:rgb(83, 83, 252);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+html{
+  scroll-behavior: smooth;
+}
+.container {
+  width: 90%;
+  margin: 100px auto;
+}
+/* <!----------------------- Navbar -----------------------  --> */
+.navbar{
+  background-color: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 222;
+}
+.navbar li{
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+}
+.navbar li a{
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  transition: 0.5s;
+}
+.navbar li a:hover{
+  color: var(--mainColor);
+}
+.navbar li button{
+  background-color: var(--mainColor);
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.navbar li button:hover{
+background:rgb(27, 11, 130);
+}
+.menu{
+  font-size: 25px;
+  color: var(--mainColor);
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+hr{
+  opacity: 0.7;
+}
+/* <!----------------------- header -----------------------  --> */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.header .header-left>*{
+  margin-top: 15px;
+}
+.header .header-left h1{
+  font-size: 40px;
+  line-height: 1.5;
+}
+.header .header-left p{
+  color: gray;
+  width: 60%;
+  line-height: 1.5 ;
+}
+.header .header-left div{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header .header-left button i{
+  margin-left: 8px;
+}
+.header .header-left button{
+  background-color: var(--mainColor);
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.header .header-left button:hover{
+  background:rgb(27, 11, 130);
+  }
+  .header .header-right img{
+    width: 90%;
+  }
+/* <!----------------------- Services -----------------------  --> */
+.Services .Service-top{
+  text-align: center;
+}
+.Services .Service-top h1{
+  font-size: 30px;
+    margin-bottom: 30px;
+}
+.Services .Service-top span{
+  color: var(--mainColor);
+}
+.Services .Service-top p{
+  color: gray;
+  width: 50%;
+  margin: auto;
+  line-height: 1.5;
+}
+.Services .Service-dawn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 100px;
+}
+.Services .Service-dawn .card>*{
+  margin-top: 20px;
+}
+.Services .Service-dawn .card{
+    background-color: #ddd;
+    padding: 35px;
+    transition: 0.5s;
+    border-radius: 20px;
+}
+.Services .Service-dawn .card:hover{
+  background-color: var(--mainColor);
+  color: white;
+  transform: scale(1.1);
+}
+.Services .Service-dawn .card:hover a{
+  color: white;
+}
+.Services .Service-dawn .card p{
+  line-height: 1.5;
+  opacity: 0.7;
+}
+.Services .Service-dawn .card div{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.Services .Service-dawn .card div i{
+  font-size: 20px;
+}
+.Services .Service-dawn .card div a{
+  text-decoration: none;
+  font-size: 18px;
+}
+/* <!----------------------- About -----------------------  --> */
+.about{
+  display: flex;
+}
+.about .about-left h1{
+  margin-bottom:20px ;
+  font-size: 30px
+}
+.about .about-left span{
+  color: var(--mainColor);
+}
+.about .about-left p{
+  margin-bottom:20px ;
+}
+.about .about-left .parts{
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  justify-content: center;
+}
+.about .about-left .parts .part div{
+  margin-top: 20px;
+  padding: 10px 30px;
+  border-radius: 30px;
+  box-shadow: rgba(23, 36, 181, 0.2) 0px 2px 8px 0px;
+    transition: 0.5s;
+}
+.about .about-left .parts .part div h2{
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  transition:0.5s;
+}
+.about  .parts .part :hover h2 {
+  color: var(--mainColor);
+  cursor: pointer;
+}
+.about .about-left .text {
+  margin-top: 20px;
+}
+.about .about-left button{
+  background-color: var(--mainColor);
+  color: white;
+  font-size: 18px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: 0.5s;
+}
+.about .about-left button:hover{
+  background-color: rgb(25, 25, 186);
+  color: white;
+}
+.about-right img{
+  width: 100%;
+}
+/* <!----------------------- opinion -----------------------  --> */
+/* ----1------ */
+.opinion .opinion-up{
+  text-align: center;
+}
+.opinion .opinion-up h1{
+  margin-bottom:30px ;
+  font-size: 30px;
+}
+.opinion .opinion-up span{
+  color: var(--mainColor);
+}
+.opinion .opinion-up p{
+  color: gray;
+  width: 50%;
+  margin: auto;
+  line-height: 1.5;
+  margin-bottom: 100px;
+}
+/* ----2------ */
+.opinion-dawn{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.opinion-dawn .content-left .h {
+  display: flex;
+  gap: 60px;
+  margin-top: 40px;
+}
+.opinion-dawn .content-left .active  h3{
+  color: var(--mainColor);
+}
+.opinion-dawn .content-left .active  .icons{
+  color: var(--mainColor);
+}
+/* ----3------ */
+.opinion-dawn .content-right div p{
+  width: 300px;
+}
+.opinion-dawn .content-right div{
+  margin-top: 30px;
+}
+.opinion-dawn .content-right div .main{
+  background-color: var(--mainColor);
+  padding: 80px;
+  border-radius: 20px;
+  color: white;
+  line-height: 1.5;
+}
+.opinion-dawn .content-right .profail{
+  display: flex;
+  gap: 10px;
+}
+.opinion-dawn .content-right .profail h3{
+  margin-bottom: 20px;
+}
+.opinion-dawn .content-right .profail img{
+  border-radius: 50%;
+}
+ /* <!----------------------- foter -----------------------  --> */
+ .foter{
+  background-color: var(--mainColor);
+  padding: 25px 25px;
+}
+.foter p{
+  text-align: center;
+  color: white;
+  font-size: 25px;
+
+}
+
+
+/* <!----------------------- media -----------------------  --> */
+@media screen and (max-width : 480px){
+  .navbar  ul{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+  .header
+  {
+    flex-direction: column;
+  }
+  .header .header-left h1{
+    font-size: 30px;
+  }
+  .header .header-left p{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .header .header-right img{
+    max-width: 100%;
+    margin-top: 40px;
+  }
+  /* Services */
+  .Services .Service-dawn{
+    flex-direction: column;
+  }
+  .Services .Service-top p{
+    width: 100%;
+  }
+  .Services .Service-dawn .card{
+    width: 70%;
+  }
+    /* About */
+    .about{
+      flex-direction: column;
+    }
+    .about .about-left .parts{
+      flex-direction: column;
+      gap: 10px;
+    }
+    .about .about-left p{
+      width: 100%;
+    }
+    .about .about-left .parts .part div{
+      width: 85%;
+    }
+    .about-right img{
+      margin-top: 50px;
+      min-width: 100%;
+    }
+    .about .about-left .text {
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+    /* opinion */
+    .opinion .opinion-up p{
+      width: 100%;
+    }
+    .opinion-dawn{
+      flex-direction: column;
+    }
+    .opinion-dawn .content-left .h{
+      gap: 20px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    .opinion-dawn .content-right .profail img{
+      max-width: 100%;
+    }
+    .opinion-dawn .content-right div .main{
+      width: 70%;
+      padding: 40px;
+    }
+}
+
+
+
+
